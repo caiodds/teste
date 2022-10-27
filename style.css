@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(https://images3.alphacoders.com/103/1034504.jpg);
+    color: white;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.painel {
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    margin: 10%;
+    height: 10%;
+}
+
+.btn {
+    border: 2px solid red;
+    align-items: center;
+    color: white;
+}
+
+.btn:hover {
+    border: 2px solid rgb(253, 40, 40);
+}
+
+.btn:active {
+    background-color: red;
+    color: white;
+    border: outset;
+}
+
+.elemento {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.elemento:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.elemento:active {
+    border: outset;
+}
+
+.nome {
+    border: none;
+    border-radius: 3px;
+}
+
+.senha {
+    border: none;
+    border-radius: 3px;
+}
+
+.nome:active {
+    border: outset;
+
+}
+
+.senha:active {
+    border: outset;
+}
+
+@media (max-width: 450px) {
+    header {
+        justify-content: center;
+    }
+}
