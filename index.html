@@ -14,7 +14,8 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <title>Painel</title>
 </head>
@@ -23,7 +24,7 @@
     <nav class="navbar" style="background-color: #e3f2fd98;">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="3377024_logo_media_social_soundcloud_icon.png"  width="30" height="24"> Nome da empresa
+            <img src="public/img/3377024_logo_media_social_soundcloud_icon.png"  width="30" height="24"> Nome da empresa
           </a>
         </div>
       </nav>
@@ -40,22 +41,36 @@
         <br>
         
       <h2>Login</h2>
+      <br>
+      <br>
       <i class="fas fa-user"></i> <input id="nome" class="nome" type="text" placeholder="nome" >
         <br>
         <br>
       <i class="fas fa-lock"></i> <input id="senha" class="senha" type="password" placeholder="senha" >
         <br>
         <br>
-        <button type="button" onclick="campos();" class="btn">Entrar</button>
+        <button type="button" onclick="campos();" class="btn btn-outline-danger">Entrar</button>
         <br>
         <br>
+        <div id="g_id_onload"
+        data-client_id="301462958394-ub1ru0hr81bvrp96qqdbhdvdtbkjdm32.apps.googleusercontent.com"
+        data-login_uri="https://your.domain/your_login_endpoint"
+        data-auto_prompt="false">
+     </div>
+     <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+     </div>
+     <br>
         <a onclick="esqueceusenha();" class="elemento" >Esqueceu sua senha</a>
         <br>
-        <div class="img">
-        <img onclick="google();" href="google.com" src="7123025_logo_google_g_icon.png" alt="">
-      </div>
-    </div>
+        <br>
+        </div>
 </body>
-<script src="campovazio.js"></script>
+<script src="public/js/campovazio.js"></script>
 
 </html>
